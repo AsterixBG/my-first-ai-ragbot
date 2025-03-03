@@ -2,6 +2,8 @@
 
 A beginner-friendly showcase for building AI-powered agents in the .NET ecosystem.  
 This project provides a simple console-based chatbot utilizing Microsoft Semantic Kernel, Ollama, Qdrant for memory storage and Weather plugin that allows it to go to [OpenWeatherMap](https://openweathermap.org) and check the current weather.
+It demonstrates how a local language model (LLM) can be integrated and utilized with minimal code to perform real tasks.  
+The goal is to provide a practical example of deploying LLM solutions, highlighting their capabilities in text generation, contextual understanding, and automating various processes.
 
 Spicing it up a little with Retrieval-Augmented Generation (RAG)!  
 This is our friend from the [my first ai chatbot repository](https://github.com/AsterixBG/my-first-ai-chatbot).  
@@ -12,7 +14,7 @@ He goes out, retrieves the data for you, and lets you know.
 In my previous example, the LLM used a predefined prompt that made him aware of the conversation's context.  
 Now, he has the capacity to take action when the user's request can be accomplished using a tool.
 
-### Key Technical Aspects
+## Key Technical Aspects
 
 ✅ In-memory caching for city geolocation within the application's lifecycle. We query the database only the first time during the bot's runtime.  
 ✅ Database persistence for geolocations of queried cities since that data won't ever change (hopefully).  
